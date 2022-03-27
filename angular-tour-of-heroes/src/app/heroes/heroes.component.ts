@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { Hero } from './../hero';
 
 @Component({
   selector: 'app-heroes',
@@ -8,11 +11,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class HeroesComponent implements OnInit {
 
+  hero: Hero = {
+    id: 1,
+    name: "Windstorm"
+  };
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  hero = "Windstorm"
 
 }
